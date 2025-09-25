@@ -1,0 +1,96 @@
+
+html { font-size: 16px; }
+body {
+    background-color: #fff8e1; 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+.container { width: 90%; max-width: 1000px; margin: 0 auto; }
+
+.site-header {
+    text-align: center;   
+    padding: 20px 0;     
+    background: #a87c5c;    
+    border-bottom: 1px solid #ddd;
+    color: #f5c390;          
+}
+  
+.site-header h1 {
+    margin: 0 0 15px 0;  
+    font-size: 2rem;
+    color: #f5c390; 
+    text-shadow: 2px 2px 4px #000;            
+}
+  
+.site-header .main-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;    /* меню в ряд по центру */
+    gap: 20px;               /* расстояние между пунктами */
+}
+  
+.site-header .main-nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;             /* белые ссылки */
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent; /* невидимая линия */
+}
+  
+.site-header .main-nav a:hover {
+    color: #ffd700;          /* золотой текст при наведении */
+    border-bottom: 2px solid #ffd700; /* золотая линия снизу */
+}
+
+
+.hero img { width: 100%; height: auto; display:block; border-radius: 8px; }
+
+.card {
+  padding: 1rem;           
+  margin: 1rem 0;        
+  border: 2px solid #e0e0e0; 
+  box-sizing: border-box;  
+}
+
+.hero-section {
+    background-image: url("https://i.pinimg.com/736x/7b/99/3e/7b993e046bab3ffc01da2e70d9f758ec.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 200px 20px;
+    color: white;
+    text-align: center;
+  }
+  
+  .hero-section h2, p {
+    color: white;
+    text-shadow: 2px 2px 4px black;
+  }
+  
+.two-col .left { float: left; width: 65%; }  
+.two-col .right { float: right; width: 30%; }
+.clearfix::after { content:""; display:block; clear:both; }
+
+#main-title { font-size: 2rem; } /* id selector */
+.highlight { background: #fff3cd; padding: 0.5em; } /* class selector with em */
+
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 8px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.site-footer { background:#cc9156; padding:1rem 0; margin-top:2rem; }
+
+@media (max-width: 700px) {
+  .two-col .left, .two-col .right { float:none; width:100%; }
+}
